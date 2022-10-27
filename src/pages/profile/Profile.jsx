@@ -25,7 +25,7 @@ const Profile = () => {
 
   return (
     <div className='containerProfileGenerale'>
-        <h1>Profilo utente</h1>
+        <h1>Profilo utente ({userData.isAdmin ? "Amministratore" : "Guest"})</h1>
         <button 
             className='buttonProfile' 
             onClick={(handleToggle)}
