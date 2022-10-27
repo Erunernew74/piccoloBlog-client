@@ -1,0 +1,53 @@
+.containerProfileGenerale {
+    font-family: 'Mukta';
+    margin: 0px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerProfileGenerale h1 {
+    padding-top: 35px;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    
+}
+
+.profileContainer input {
+    padding: 8px;
+    width: 400px;
+}
+.profileContainer label {
+    margin-top: 15px;
+}
+
+.buttonProfile {
+    margin-top: 15px;
+    height: 55px;
+    width: 225px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 368px) {
+    .profileContainer {
+        width:100%;
+    }
+    .profileContainer input {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 368px) and (max-width: 768px) {
+    .profileContainer {
+            width:100%;  
+        }
+    .profileContainer input {
+        width: 300px;
+    }
+}

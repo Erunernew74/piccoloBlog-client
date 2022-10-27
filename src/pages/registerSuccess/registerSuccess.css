@@ -1,0 +1,46 @@
+.containerRegister {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+
+}
+
+.registerContainer1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* background-color: red; */
+    /* color: white; */
+}
+
+.registerContainer2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+ 
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #f7f8f8, #acbb78);
+}
+
+.registerContainer2 img {
+    max-width: 70%;
+}
+
+@media screen and (max-width: 1122px) {
+    .registerContainer2 {
+        dispaly: none;
+    }
+    .registerContainer1 {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .registerContainer1 h1 {
+        font-size: 20px;
+    }
+}

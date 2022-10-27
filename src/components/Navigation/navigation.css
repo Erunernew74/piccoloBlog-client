@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: o;
+    box-sizing: border-box;
+    font-family: 'Urbanist';
+}
+
+.items {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 55px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+    gap: 15px;
+}

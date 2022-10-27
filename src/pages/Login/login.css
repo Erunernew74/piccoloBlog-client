@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 250px) {
+    .container {
+        width: 100%;
+        height: 85vh;
+        background-color: teal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .loginContainer {
+        width: 100%;
+        height: 80%;
+        border-radius: 12px;
+        margin: 0 15px;;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .formLogin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        /* border: 1px solid green; */
+    }
+
+    .titleLogin {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .containerForm {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    .containerForm input {
+        width: 75%;
+        margin: 5px auto;
+        padding: 8px;
+    }
+    .buttonLogin {
+        padding: 5px 15px;
+        cursor: pointer;
+        margin: 10px 2px;
+    }
+    .spanRegister {
+        font-size: 8px;
+        text-align: center;
+    }
+    .forgotPassword {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .forgotPassword p {
+        /* text-align: center; */
+        font-size: 9px;
+        /* margin-left: 18px; */
+    }
+
+}
+
+@media screen and (min-width: 250px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 85vh;
+        background-image: linear-gradient(to right, #536976 , #292E49);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .loginContainer {
+        width: 300px;
+        height: 85%;
+        border-radius: 12px;
+        margin: 0 15px;;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .formLogin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+    }
+
+    .titleLogin {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .containerForm {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .containerForm input {
+        width: 200px;
+        margin: 5px auto;
+        padding: 8px;
+    }
+    .buttonLogin {
+        padding: 5px 15px;
+        cursor: pointer;
+        margin: 10px 2px;
+    }
+    .spanRegister {
+        font-size: 12px;
+    }
+    .forgotPassword {
+        width: 100%;
+        display: flex;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .forgotPassword p {
+        margin-right: 8px;
+        font-size: 9px;
+    }
+
+
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        width: 100%;
+        height: 90vh;
+        /* background-color: teal; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right, #9796f0 , #A5CC82);
+    }
+    .loginContainer {
+        width: 400px;
+        height: 70%;
+        border-radius: 12px;
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .formLogin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+    }
+
+    .titleLogin {
+        text-align: center;
+        font-size: 22px;
+        /* margin-bottom: 30px; */
+    }
+    .containerForm {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .containerForm input {
+        width: 300px;
+        margin: 5px auto;
+        padding: 12px;
+        border: none;
+        border-bottom: 1px solid gray;
+        
+    }
+
+ 
+    .buttonLogin {
+        padding: 15px 45px;
+        cursor: pointer;
+        margin: 10px 15px;
+        border: none;
+        width: 225px;
+        background-image: linear-gradient(to right, #9796f0 , #A5CC82);
+        border-radius: 20px;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        transition: 0.4s;
+    }
+
+    .buttonLogin:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .forgotPassword {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+    .forgotPassword p {
+        margin-right: 8px;
+        
+        font-size: 12px;
+    }
+}
+    
+
+
+
