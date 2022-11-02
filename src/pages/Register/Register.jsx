@@ -2,10 +2,25 @@ import React, { useState, useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import "./register.css";
 import FadeLoader from "react-spinners/ClipLoader";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
-
+  // const notify =  async(e) => {
+  //   e.preventDefault()
+  //   if (
+  //     nome === "" ||
+  //     cognome === "" ||
+  //     username === "" ||
+  //     email === "" ||
+  //     password === "" ||
+  //     passwordVerify === ""
+  //   ) {
+  //     toast.warning("Alcuni campi sono vuoti", {
+  //       position: toast.POSITION.TOP_RIGHT,
+  //     });
+  //   }
+  // };
   const [loader, setLoader] = useState(false);
   useEffect(() => {
     setLoader(true);
@@ -34,15 +49,17 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if(
-      nome=='' ||
-      cognome=='' ||
-      username=='' ||
-      email=='' ||
-      password=='' ||
-      passwordVerify==''
+      nome ==='' ||
+      cognome ==='' ||
+      username ==='' ||
+      email ==='' ||
+      password ==='' ||
+      passwordVerify ===''
       ) {
         return alert(`Devi compilare tutti i campi`)
       }
+    
+
     const res = await fetch(`http://localhost:5000/auth/register`, {
       method: "POST",
       mode: "cors",
@@ -61,6 +78,8 @@ const Register = () => {
     const newData = await res.json();
     setData(newData);
   };
+
+ 
 
   const handleReset = (e) => {
     e.preventDefault();
@@ -128,6 +147,7 @@ const Register = () => {
             />
             <div className="registerButton">
               <button>Submit</button>
+              {/* <ToastContainer /> */}
               <button onClick={handleReset}>Reset</button>
             </div>
           </form>

@@ -3,8 +3,18 @@ import "./login.css";
 import { Link, Navigate } from "react-router-dom";
 import { useAuth } from "../AuthComponent";
 import FadeLoader from "react-spinners/ClipLoader";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
+  const notify = () => {
+  
+    if(email === '' || password === '') {
+      toast.warning('ATTENZIONE! Alcuni campi sono vuoti', {
+        className: 'toast-message'
+    })
+    }
+  }
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -38,6 +48,8 @@ const Login = () => {
         password: password,
       }),
     });
+
+    console.info("Log in success (setIsAuth): ", res.ok ? "yes" : "no")
     setIsAuth(res.ok);
   };
 
@@ -73,9 +85,11 @@ const Login = () => {
               <p>Dimenticato la password? Clicca <Link to='/reset-password' >qui</Link></p>
             </div>
             <div className="containerButtonLogin">
-              <button className="buttonLogin">Login</button>
+              <button className="buttonLogin" onClick={notify}>Login</button>
+              <ToastContainer />
             </div>
           </form>
+          
           <span className="spanRegister">
             Non sei ancora registrato? Vai <Link to="/register">qui</Link>
           </span>

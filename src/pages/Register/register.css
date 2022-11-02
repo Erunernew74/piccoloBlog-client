@@ -260,5 +260,13 @@
     }
 
     .registerButton button:hover {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    }
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    }
+    .toast-message {
+        background-color: darkblue;
+        color: #fff;
+        font-size: 15px;
+        width: 300px;
+        padding: 30px 20px;
+    }
 }

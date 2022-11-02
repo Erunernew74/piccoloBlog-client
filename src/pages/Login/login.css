@@ -217,6 +217,13 @@
         
         font-size: 12px;
     }
+    .toast-message {
+        background-color: darkblue;
+        color: #fff;
+        font-size: 15px;
+        width: 200px;
+        padding: 30px 20px;
+    }
 }
     
 

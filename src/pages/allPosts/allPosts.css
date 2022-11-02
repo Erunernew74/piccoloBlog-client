@@ -1,0 +1,104 @@
+.containerCards {
+    border-radius: 15px;
+    /* border: 1px solid teal; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 15px 0;
+    transition: 0.4s;
+}
+.containerCards:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.containerPosts {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+}
+
+
+.containerPosts h1 {
+    text-align: center;
+}
+.cardPosts {
+    width: 300px;
+    height: 500px;
+    /* border: 1px solid teal; */
+    display: flex;
+    flex-direction: column;
+
+}
+.cardPosts h2 {
+    text-align: center;
+    padding: 15px 5px;
+}
+.containerImageCardBlog{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 0; */
+}
+.containerImageCardBlog img {
+    width: 300px;
+    height: 200px;
+    /* border: 1px solid black; */
+    /* border-radius: 50%; */
+    object-fit: cover;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.itemsCard {
+    gap: 10px;
+    margin: 0 10px;
+}
+
+.itemsCard h5 {
+    margin-top: 20px;
+}
+
+.itemsReadSinglePost {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+.itemsReadSinglePost:hover {
+    
+}
+
+.itemsReadSinglePost p {
+    text-direction: none;
+}
+#btnReadSinglePost {
+    border: none;
+    border-radius: 15px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+#btnReadSinglePost:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#icon{
+    font-size: 25px;
+}
+
+.linkItems {
+    text-align: center;
+    margin: 15px 0;
+    text-direction: none;
+}
+
+@media screen and (max-width: 330px) {
+    .containerCards {
+        border-radius: 15px;
+        border: 1px solid teal;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 15px 0;
+    }
+}
